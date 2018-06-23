@@ -98,7 +98,7 @@ android {
     buildToolsVersion "26.0.3"
 
     defaultConfig {
-        applicationId "com.legionoutro"
+        applicationId "com.brian.legion"
         minSdkVersion 16
         targetSdkVersion 26
         versionCode 1
@@ -129,6 +129,7 @@ android {
         release {
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+            signingConfig signingConfigs.release
         }
     }
     // applicationVariants are e.g. debug, release
