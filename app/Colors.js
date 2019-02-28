@@ -4,4 +4,5 @@ const Colors = {
   purple: '#B540C5',
   green: '#268413',
 };
+
 export default Colors;
