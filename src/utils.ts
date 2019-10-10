@@ -1,10 +1,16 @@
 import { Dimensions } from 'react-native';
 import faker from 'faker';
 
-export const generateName = () => {
-  const name = faker.fake('{{name.lastName}} {{name.firstName}}');
-  return name.toUpperCase();
+export enum Color {
+  white = '#FFFFFF',
+  black = '#000000',
+  purple = '#B540C5',
+  green = '#268413',
 }
+
+export const generateName = () => (
+  faker.fake('{{name.lastName}} {{name.firstName}}').toUpperCase()
+);
 
 export const generateJob = () => {
   const jobArray = faker.name.jobTitle().split(' ');
@@ -28,6 +34,5 @@ export const generateRectangle = () => {
     height: rndmHeight,
     left: rndmX,
     top: rndmY,
-    position: 'absolute',
-  }
-}
+  };
+};
