@@ -1,17 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { View } from 'react-native';
 
-import {
-  Color,
-  generateRectangle,
-} from '../../utils';
+import { Color, generateRectangle } from '../../utils';
 import styles from './styles';
 
-type RectangleProps = {
-  color: Color,
-};
-
-const Rectangle = ({ color }: RectangleProps) => {
+const Rectangle = ({ color }: { color: Color }) => {
   const [coordinate, setCoordinate] = useState(generateRectangle());
 
   const {

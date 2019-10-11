@@ -1,18 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Text, View } from 'react-native';
 
-import {
-  Color,
-  generateName,
-  generateJob,
-} from '../../utils';
+import { Color, generateName, generateJob } from '../../utils';
 import styles from './styles';
 
-type NameProps = {
-  color: Color,
-};
-
-const Name = ({ color }: NameProps) => {
+const Title = ({ color }: { color: Color }) => {
   const [name, setName] = useState(generateName());
   const [job, setJob] = useState(generateJob());
 
@@ -41,4 +33,4 @@ const Name = ({ color }: NameProps) => {
   );
 };
 
-export default Name;
+export default Title;
