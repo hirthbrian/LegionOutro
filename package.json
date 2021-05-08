@@ -10,13 +10,13 @@
     "lint": "eslint './src/**/*.{ts,tsx}'"
   },
   "dependencies": {
-    "expo": "^39.0.0",
-    "expo-font": "~8.3.0",
+    "expo": "^41.0.0",
+    "expo-font": "~9.1.0",
     "faker": "^4.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-39.0.3.tar.gz",
-    "react-native-web": "~0.13.7"
+    "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
+    "react-native-web": "~0.13.12"
   },
   "devDependencies": {
     "@types/faker": "^4.1.6",
@@ -24,13 +24,13 @@
     "@types/react-native": "~0.63.2",
     "@typescript-eslint/eslint-plugin": "^2.3.2",
     "@typescript-eslint/parser": "^2.3.2",
-    "babel-preset-expo": "^8.3.0",
+    "babel-preset-expo": "8.3.0",
     "eslint": "^6.5.1",
     "eslint-config-airbnb-typescript": "^5.0.0",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-react": "^7.15.0",
-    "typescript": "~3.9.2"
+    "typescript": "~4.0.0"
   },
   "private": true
 }
